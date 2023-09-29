@@ -1,0 +1,520 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+#blink {
+    position: fixed;
+    z-index: 5;
+    color: white;
+    bottom: 15px;
+    right: 15px;
+    transition: all .4s;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    transition: all .4s;
+    padding: 20px 30px;
+    height: 100px;
+
+
+
+}
+
+
+nav a {
+    color: rgb(23, 26, 32);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: rgba(151, 151, 151, 0);
+
+
+}
+
+nav a:hover {
+    color: rgb(23, 26, 32);
+    background-color: rgba(151, 151, 151, 0.215);
+
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.navmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 400px;
+
+}
+
+.right-desktop {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+
+
+
+
+}
+
+.mobile-view {
+    display: none;
+}
+
+
+.items img {
+    width: 160px;
+}
+
+.items {
+    padding: 50px 0px 50px 0px;
+    gap: 50px;
+    display: flex;
+
+
+
+}
+
+#nav1 {
+    display: none;
+
+
+}
+
+#nav2 {
+    display: none;
+
+}
+
+#nav3 {
+    display: none;
+
+}
+
+#nav4 {
+    display: none;
+
+}
+
+
+
+#nav5 {
+    display: none;
+
+}
+
+
+
+.items a {
+    color: inherit;
+    font-size: 13px;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-top: 10px;
+
+}
+
+.items a:hover {
+
+    border-bottom: 2px solid rgb(0, 0, 0);
+
+}
+
+.items p {
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.item1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navitemlinks {
+    display: flex;
+    gap: 17px;
+}
+
+.logo svg {
+    width: 100px;
+    color: rgb(23, 26, 32);
+
+}
+
+nav svg {
+    width: 24px;
+    padding-bottom: 5px;
+
+
+}
+
+/* aside */
+
+#blurbg {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.322);
+    backdrop-filter: blur(5px);
+
+}
+
+#sidemenu {
+    z-index: 5;
+    position: fixed;
+    right: -320px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    padding: 60px 30px 30px 30px;
+    transition: .4s;
+    height: 100vh;
+
+}
+
+aside a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600px;
+    padding: 10px 0;
+}
+
+aside button {
+    font-size: 27px;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: sans-serif;
+}
+
+
+/* sections */
+.mainsection {
+    height: 100vh;
+
+    display: grid;
+
+    grid-auto-flow: row;
+    grid-auto-rows: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    transition: .4s;
+    z-index: -5;
+
+
+
+}
+
+.mainsection>* {
+    scroll-snap-align: start;
+}
+
+.mainsection::-webkit-scrollbar {
+    width: 0;
+}
+
+.card {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: .4s;
+
+
+}
+
+section h1 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content a {
+    color: rgb(23, 26, 32);
+    text-decoration: underline;
+
+
+
+}
+
+.sectionButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.button1 {
+    color: rgb(23, 26, 32);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.61);
+    padding: 7px 60px 7px 60px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+
+
+
+}
+
+.button2 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 7px 60px 7px 60px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+
+
+
+}
+
+.buysection1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 100vh;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+.buy-carinfo {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    align-self: flex-start;
+    margin-top: 100px;
+    gap: 10px;
+
+    padding: 30px;
+    padding-top: 60px;
+    border-radius: 10px;
+
+}
+
+.carimg {
+    width: 70%;
+
+}
+
+.buysection1 img {
+
+    width: 90%;
+
+}
+
+.buy-info2 {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.infobold {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.color button {
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+
+}
+
+.color button img {
+    width: 30px;
+    height: 30px;
+}
+
+.total {
+    width: 500px;
+    height: 70px;
+    background-color: rgba(194, 194, 194, 0.459);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.total i {
+    padding: 10px;
+    border-radius: 60px;
+    background-color: rgb(255, 255, 255);
+    color: gray;
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.colorbuttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.buy-info3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.buy-info3 input {
+    cursor: pointer;
+}
+
+.buysection1 h2 {
+    font-weight: 600;
+
+}
+
+.buysection1 p {
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.buysection1 a {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.small {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+
+
+@media (max-width:786px) {
+    .sectionButtons {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .mobile-view {
+        display: initial;
+    }
+
+    .right-desktop {
+        display: none;
+
+    }
+
+    .center-desktop {
+        display: none;
+    }
+
+
+    .carimg {
+        width: 100%;
+
+    }
+
+    .buysection1 img {
+        padding-top: 100px;
+        width: 90%;
+
+    }
+
+    .buy-carinfo {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        align-self: flex-start;
+
+        gap: 10px;
+
+        padding: 30px;
+        padding-top: 60px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    .total {
+        width: 340px;
+        height: 70px;
+        background-color: rgba(194, 194, 194, 0.459);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    #up {
+        display: none;
+
+
+    }
+
+
+
+
+}
